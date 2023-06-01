@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lean Canvas</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/sanitize.css" />
+    <!-- <link rel="stylesheet" href="css/sanitize.css" /> -->
     <link rel="stylesheet" href="css/base.css" />
 
     <!-- google fonts読み込み -->
@@ -17,240 +17,244 @@
       rel="stylesheet" />
   </head>
   <body onload="setupDes();">
-    <h1 id="pagetitle">Lean Canvas</h1>
-    <div class="ideatitle">
-      <input type="text" id="ideatitle" value="事業タイトル" /> <button type="button" id="save">SAVE</button>
-    </div>
+    <header id="titlearea">
+      <h1 id="pagetitle">Lean Canvas</h1>
+      <div class="ideatitle">
+        <input type="text" id="ideatitle" value="事業タイトル" /> <button type="button" id="save">SAVE</button>
+      </div>
+    </header>
 
-    <!-- テーブル上段 -->
-    <div id="table1">
-      <!-- ========上段1列目======== -->
-      <div class="tablecontents20">
-        <!-- ========入力エリア①======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">ユーザーが抱える課題</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="problem" cols="30" rows="10">
+    <div id="mainarea">
+      <!-- テーブル上段 -->
+      <div id="table1">
+        <!-- ========上段1列目======== -->
+        <div class="tablecontents20">
+          <!-- ========入力エリア①======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">ユーザーが抱える課題</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="problem">
 ユーザーはどのような課題を抱えていますか？
 
 （例）家にいるのでついつい間食してしまう</textarea
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- ========入力カラム①終了======== -->
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力カラム①終了======== -->
 
-        <!-- ========入力エリア②======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">既存の代替品、競合サービス</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="exiting" cols="10" rows="10">
+          <!-- ========入力エリア②======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">既存の代替品、競合サービス</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="exiting">
 現在、ユーザーはどのような方法やサービスで課題を解消していますか？
 
 （例）感染対策済みのパーソナルジム</textarea
-                >
-              </td>
-            </tr>
-          </table>
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力カラム②終了======== -->
         </div>
-        <!-- ========入力カラム②終了======== -->
-      </div>
-      <!-- ========上段1列目終了======== -->
+        <!-- ========上段1列目終了======== -->
 
-      <!-- ========上段2列目======== -->
-      <div class="tablecontents20">
-        <!-- ========入力エリア③======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">解決策</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="solution" cols="30" rows="10">
+        <!-- ========上段2列目======== -->
+        <div class="tablecontents20">
+          <!-- ========入力エリア③======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">解決策</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="solution">
 ユーザーはどのような課題を抱えていますか？
 
 （例）少人数での運営、1日3回配送</textarea
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- ========入力エリア③終了======== -->
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア③終了======== -->
 
-        <!-- ========入力エリア④======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">主要指標</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="metrics" cols="30" rows="10">
+          <!-- ========入力エリア④======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">主要指標</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="metrics">
 事業の成長はどのような指標で図りますか？
 
 （例）店舗利用者数、ダウンロード数</textarea
-                >
-              </td>
-            </tr>
-          </table>
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア④終了======== -->
         </div>
-        <!-- ========入力エリア④終了======== -->
-      </div>
-      <!-- ========上段2列目終了======== -->
+        <!-- ========上段2列目終了======== -->
 
-      <!-- ========上段3列目======== -->
-      <div class="tablecontents20">
-        <!-- ========入力エリア⑤======== -->
-        <div class="tablecontents_h100">
-          <table class="innertable">
-            <tr>
-              <th class="row10">独自の価値提案</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="uniquevalue" cols="30" rows="10">
+        <!-- ========上段3列目======== -->
+        <div class="tablecontents20">
+          <!-- ========入力エリア⑤======== -->
+          <div class="tablecontents_h100">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">独自の価値提案</th>
+              </tr>
+              <tr>
+                <td class="row50vh">
+                  <textarea name="" id="uniquevalue">
 どのような方法で価値提案を実現しますか？
 
 （例）家にいるのでついつい間食してしまう</textarea
-                >
-              </td>
-            </tr>
-          </table>
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア⑤終了======== -->
         </div>
-        <!-- ========入力エリア⑤終了======== -->
-      </div>
-      <!-- ========上段3列目終了======== -->
+        <!-- ========上段3列目終了======== -->
 
-      <!-- ========上段4列目======== -->
-      <div class="tablecontents20">
-        <!-- ========入力エリア⑥======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">競合優位性</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="advantage" cols="30" rows="10">
+        <!-- ========上段4列目======== -->
+        <div class="tablecontents20">
+          <!-- ========入力エリア⑥======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">競合優位性</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="advantage">
 ユーザーはなぜ、このサービスを選択するのでしょうか？
 
 （例）利用者のアプリ利用ビッグデータ
 （例）ユーザー毎にカスタマイズされた情報提案</textarea
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- ========入力エリア⑥終了======== -->
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア⑥終了======== -->
 
-        <!-- ========入力エリア⑦======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">顧客への展開方法</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="channel" cols="30" rows="10">
+          <!-- ========入力エリア⑦======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">顧客への展開方法</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="channel">
 どのようにして顧客へサービスを届けますか？
 （例）店舗、SNS・口コミ</textarea
-                >
-              </td>
-            </tr>
-          </table>
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア⑦終了======== -->
         </div>
-        <!-- ========入力エリア⑦終了======== -->
-      </div>
-      <!-- ========上段4列目終了======== -->
+        <!-- ========上段4列目終了======== -->
 
-      <!-- ========上段5列目======== -->
-      <div class="tablecontents20">
-        <!-- ========入力エリア⑧======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">顧客セグメント</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="customer" cols="30" rows="10">
+        <!-- ========上段5列目======== -->
+        <div class="tablecontents20">
+          <!-- ========入力エリア⑧======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">顧客セグメント</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="customer">
 誰のために行うサービスですか？
 （例）忙しい社会人</textarea
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- ========入力エリア⑧終了======== -->
-        <div class="tablecontents_h50">
-          <table class="innertable">
-            <tr>
-              <th class="row10">アーリーアダプター</th>
-            </tr>
-            <tr>
-              <td class="row80">
-                <textarea name="" id="early" cols="30" rows="10">
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ========入力エリア⑧終了======== -->
+          <div class="tablecontents_h50">
+            <table class="innertable">
+              <tr>
+                <th class="row2vh">アーリーアダプター</th>
+              </tr>
+              <tr>
+                <td class="row25vh">
+                  <textarea name="" id="early">
 真っ先にあなたの解決策を受け入れるだろう顧客はどのような人でしょう？
 （例）コロナ太りに悩むリモートワーカー</textarea
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- ========上段5列目終了======== -->
+      </div>
+      <!-- テーブル上段終了 -->
+
+      <!-- テーブル下段 -->
+      <div id="table2">
+        <!-- ========下段1列目======== -->
+        <div class="tablecontents_w50">
+          <table class="innertable">
+            <tr>
+              <th class="row2vh">コスト構造</th>
+            </tr>
+            <tr>
+              <td class="row10vh">
+                <textarea name="" id="cost" cols="30" rows="10">
+課題を解決するための解決策や展開方法にはどのようなコストが発生しますか？
+（例）商品原価、物流コスト、店舗の在庫コストは下げることができる</textarea
                 >
               </td>
             </tr>
           </table>
         </div>
-      </div>
-      <!-- ========上段5列目終了======== -->
-    </div>
-    <!-- テーブル上段終了 -->
+        <!-- ========下段1列目終了======== -->
 
-    <!-- テーブル下段 -->
-    <div id="table2">
-      <!-- ========下段1列目======== -->
-      <div class="tablecontents_w50">
-        <table class="innertable">
-          <tr>
-            <th class="row10">コスト構造</th>
-          </tr>
-          <tr>
-            <td class="row80">
-              <textarea name="" id="cost" cols="30" rows="10">
-課題を解決するための解決策や展開方法にはどのようなコストが発生しますか？
-（例）商品原価、物流コスト、店舗の在庫コストは下げることができる</textarea
-              >
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ========下段1列目終了======== -->
-
-      <!-- ========下段2列目======== -->
-      <div class="tablecontents_w50">
-        <table class="innertable">
-          <tr>
-            <th class="row10">収益の流れ</th>
-          </tr>
-          <tr>
-            <td class="row80">
-              <textarea name="" id="revenue" cols="30" rows="10">
+        <!-- ========下段2列目======== -->
+        <div class="tablecontents_w50">
+          <table class="innertable">
+            <tr>
+              <th class="row2vh">収益の流れ</th>
+            </tr>
+            <tr>
+              <td class="row10vh">
+                <textarea name="" id="revenue" cols="30" rows="10">
 どのようにして収益を獲得しますか？
 （例）商品代金、アプリ利用料、広告収入</textarea
-              >
-            </td>
-          </tr>
-        </table>
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========下段2列目終了======== -->
       </div>
-      <!-- ========下段2列目終了======== -->
+      <!-- テーブル下段終了 -->
     </div>
-    <!-- テーブル下段終了 -->
 
     <!-- Jquery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
