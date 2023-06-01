@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lean Canvas</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/sanitize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+
+    <!-- google fonts読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+JP:wght@200;400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body onload="setupDes();">
+    <h1 id="pagetitle">Lean Canvas</h1>
+    <div class="ideatitle">
+      <input type="text" id="ideatitle" value="事業タイトル" /> <button type="button" id="save">SAVE</button>
+    </div>
+
+    <!-- テーブル上段 -->
+    <div id="table1">
+      <!-- ========上段1列目======== -->
+      <div class="tablecontents20">
+        <!-- ========入力エリア①======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">ユーザーが抱える課題</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="problem" cols="30" rows="10">
+ユーザーはどのような課題を抱えていますか？
+
+（例）家にいるのでついつい間食してしまう</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力カラム①終了======== -->
+
+        <!-- ========入力エリア②======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">既存の代替品、競合サービス</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="exiting" cols="10" rows="10">
+現在、ユーザーはどのような方法やサービスで課題を解消していますか？
+
+（例）感染対策済みのパーソナルジム</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力カラム②終了======== -->
+      </div>
+      <!-- ========上段1列目終了======== -->
+
+      <!-- ========上段2列目======== -->
+      <div class="tablecontents20">
+        <!-- ========入力エリア③======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">解決策</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="solution" cols="30" rows="10">
+ユーザーはどのような課題を抱えていますか？
+
+（例）少人数での運営、1日3回配送</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア③終了======== -->
+
+        <!-- ========入力エリア④======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">主要指標</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="metrics" cols="30" rows="10">
+事業の成長はどのような指標で図りますか？
+
+（例）店舗利用者数、ダウンロード数</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア④終了======== -->
+      </div>
+      <!-- ========上段2列目終了======== -->
+
+      <!-- ========上段3列目======== -->
+      <div class="tablecontents20">
+        <!-- ========入力エリア⑤======== -->
+        <div class="tablecontents_h100">
+          <table class="innertable">
+            <tr>
+              <th class="row10">独自の価値提案</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="uniquevalue" cols="30" rows="10">
+どのような方法で価値提案を実現しますか？
+
+（例）家にいるのでついつい間食してしまう</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア⑤終了======== -->
+      </div>
+      <!-- ========上段3列目終了======== -->
+
+      <!-- ========上段4列目======== -->
+      <div class="tablecontents20">
+        <!-- ========入力エリア⑥======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">競合優位性</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="advantage" cols="30" rows="10">
+ユーザーはなぜ、このサービスを選択するのでしょうか？
+
+（例）利用者のアプリ利用ビッグデータ
+（例）ユーザー毎にカスタマイズされた情報提案</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア⑥終了======== -->
+
+        <!-- ========入力エリア⑦======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">顧客への展開方法</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="channel" cols="30" rows="10">
+どのようにして顧客へサービスを届けますか？
+（例）店舗、SNS・口コミ</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア⑦終了======== -->
+      </div>
+      <!-- ========上段4列目終了======== -->
+
+      <!-- ========上段5列目======== -->
+      <div class="tablecontents20">
+        <!-- ========入力エリア⑧======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">顧客セグメント</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="customer" cols="30" rows="10">
+誰のために行うサービスですか？
+（例）忙しい社会人</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- ========入力エリア⑧終了======== -->
+        <div class="tablecontents_h50">
+          <table class="innertable">
+            <tr>
+              <th class="row10">アーリーアダプター</th>
+            </tr>
+            <tr>
+              <td class="row80">
+                <textarea name="" id="early" cols="30" rows="10">
+真っ先にあなたの解決策を受け入れるだろう顧客はどのような人でしょう？
+（例）コロナ太りに悩むリモートワーカー</textarea
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- ========上段5列目終了======== -->
+    </div>
+    <!-- テーブル上段終了 -->
+
+    <!-- テーブル下段 -->
+    <div id="table2">
+      <!-- ========下段1列目======== -->
+      <div class="tablecontents_w50">
+        <table class="innertable">
+          <tr>
+            <th class="row10">コスト構造</th>
+          </tr>
+          <tr>
+            <td class="row80">
+              <textarea name="" id="cost" cols="30" rows="10">
+課題を解決するための解決策や展開方法にはどのようなコストが発生しますか？
+（例）商品原価、物流コスト、店舗の在庫コストは下げることができる</textarea
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- ========下段1列目終了======== -->
+
+      <!-- ========下段2列目======== -->
+      <div class="tablecontents_w50">
+        <table class="innertable">
+          <tr>
+            <th class="row10">収益の流れ</th>
+          </tr>
+          <tr>
+            <td class="row80">
+              <textarea name="" id="revenue" cols="30" rows="10">
+どのようにして収益を獲得しますか？
+（例）商品代金、アプリ利用料、広告収入</textarea
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- ========下段2列目終了======== -->
+    </div>
+    <!-- テーブル下段終了 -->
+
+    <!-- Jquery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      // 日時をいい感じの形式にする関数
+      function convertTimestampToDatetime(timestamp) {
+        const _d = timestamp ? new Date(timestamp * 1000) : new Date();
+        const Y = _d.getFullYear();
+        const m = (_d.getMonth() + 1).toString().padStart(2, "0");
+        const d = _d.getDate().toString().padStart(2, "0");
+        const H = _d.getHours().toString().padStart(2, "0");
+        const i = _d.getMinutes().toString().padStart(2, "0");
+        const s = _d.getSeconds().toString().padStart(2, "0");
+        return `${Y}/${m}/${d} ${H}:${i}:${s}`;
+      }
+    </script>
+
+    <!-- firebaseコード -->
+    <script type="module">
+      // 必要な機能を必要なSDKからインポートする
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+      // TODO: 使いたいFirebase製品のSDKを追加する。
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        serverTimestamp,
+      } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyATnxvdN7yQMFBLIJZMrnmTM6up7iqo4fY",
+        authDomain: "gengoka-vol1.firebaseapp.com",
+        projectId: "gengoka-vol1",
+        storageBucket: "gengoka-vol1.appspot.com",
+        messagingSenderId: "890591954452",
+        appId: "1:890591954452:web:3517d47dc4a92c624d4901",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      const db = getFirestore(app);
+
+      $("#save").on("click", function () {
+        // 保存時に必要な処理
+        const postData = {
+          ideatitle: $("#ideatitle").val(),
+          problem: $("#problem").val(),
+          exiting: $("#exiting").val(),
+          solution: $("#solution").val(),
+          metrics: $("#metrics").val(),
+          uniquevalue: $("#uniquevalue").val(),
+          advantage: $("#advantage").val(),
+          channel: $("#channel").val(),
+          customer: $("#customer").val(),
+          early: $("#early").val(),
+          cost: $("#cost").val(),
+          revenue: $("#revenue").val(),
+          time: serverTimestamp(),
+        };
+        addDoc(collection(db, "leancanvas"), postData);
+        // $("#problem").val("");無地で上書きの処理
+      });
+    </script>
+
+    <!-- jsファイル読み込み -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

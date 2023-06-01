@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: rgb(224, 218, 209);
+}
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.canvas-section {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+tr {
+  height: auto;
+}
+
+th {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  background-color: #008080;
+  padding: 5px 0 5px 0;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+button {
+  width: auto;
+  background-color: #008080;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+#pagetitle {
+  text-align: center;
+}
+
+.ideatitle {
+  width: 40%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.ideatitle input {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+textarea {
+  color: #000;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.ondes {
+  color: rgb(100, 100, 100);
+  font-size: 1.2rem;
+}
+
+#table1 {
+  width: 95%;
+  margin: auto;
+  height: 53vh;
+  display: flex;
+}
+
+#table2 {
+  width: 95%;
+  margin: auto;
+  height: 30vh;
+  display: flex;
+}
+
+.tablecontents20 {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tablecontents_h50 {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.tablecontents_h100 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tablecontents_w50 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.innertable {
+  height: 100%;
+  width: 100%;
+}
+
+.rowauto {
+  height: auto;
+}
+
+.row10 {
+  height: 10px;
+}
+
+.row80 {
+  height: 80%;
+}
+
+.row80 textarea {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
