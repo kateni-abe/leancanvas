@@ -1,18 +1,29 @@
 body {
   font-family: Arial, sans-serif;
   width: 100%;
-  background-color: rgb(224, 218, 209);
+  background-color: rgb(221, 211, 196);
 }
 
-.canvas {
+/* .canvas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 
-.canvas-section {
+/* .canvas-section {
   width: 300px;
   margin-bottom: 20px;
+} */
+
+/* ======================
+ページタイトル"Lean canvas"
+=========================*/
+
+#titlearea {
+  width: 100%;
+  height: 13vh;
+  margin-bottom: 10px;
+  /* background-color: yellowgreen; */
 }
 
 h1 {
@@ -21,48 +32,42 @@ h1 {
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0;
-  margin: 10px 0 10px 0;
+  /* background-color: red; */
 }
 
-h2 {
+#pagetitle {
   text-align: center;
+  /* background-color: deepskyblue; */
+  height: 50%;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/* ======================
+事業企画タイトル
+=========================*/
+
+.ideatitle {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  /* background-color: darkorchid; */
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-tr {
-  height: auto;
-}
-
-th {
-  font-size: 1.4rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  background-color: #008080;
-  padding: 5px 0 5px 0;
-  color: white;
-  border-radius: 5px 5px 0 0;
-}
-
-textarea {
-  resize: none;
-  width: 100%;
-  height: 100px;
-  padding: 10px;
+.ideatitle input {
+  font-size: 16px;
+  width: 80%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 5px 0px;
 }
 
 button {
-  width: auto;
+  width: 20%;
   background-color: #008080;
+  border: none;
   color: white;
   cursor: pointer;
   padding: 0 20px 0 20px;
@@ -70,102 +75,173 @@ button {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  margin: 5px 0 5px 10px;
 }
 
-#pagetitle {
-  text-align: center;
-}
+/* ======================
+メインエリア
+=========================*/
 
-.ideatitle {
-  width: 40%;
-  height: 50px;
+#mainarea {
+  width: 93%;
   margin: auto;
-  display: flex;
-  margin-bottom: 2vh;
+  /* background-color: #008080; */
 }
 
-.ideatitle input {
-  font-size: 16px;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 5px;
-  margin-right: 10px;
-  padding-left: 10px;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-textarea {
-  color: #000;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.ondes {
-  color: rgb(100, 100, 100);
-  font-size: 1.2rem;
-}
+/* ======================
+上段
+=========================*/
 
 #table1 {
-  width: 95%;
+  width: 100%;
   margin: auto;
-  height: 53vh;
+  height: 60vh;
   display: flex;
-}
-
-#table2 {
-  width: 95%;
-  margin: auto;
-  height: 30vh;
-  display: flex;
+  /* background-color: blue; */
 }
 
 .tablecontents20 {
   width: 20%;
   height: 100%;
+  /* background-color: cornflowerblue; */
+  /* border: 3px white solid; */
   box-sizing: border-box;
 }
 
 .tablecontents_h50 {
   width: 100%;
   height: 50%;
+  /* border: 3px darkorange solid; */
+  /* background-color: deeppink; */
   box-sizing: border-box;
+  padding: 5px;
 }
 
 .tablecontents_h100 {
   width: 100%;
   height: 100%;
+  /* border: 3px darkorange solid; */
+  /* background-color: deeppink; */
   box-sizing: border-box;
+  padding: 3px;
+}
+
+.innertable {
+  width: 100%;
+  /* background-color: deepskyblue; */
+}
+
+/* 各記入欄のタイトル */
+.row2vh {
+  height: 2vh;
+  padding: 5px 0 5px 0;
+  background-color: #008080;
+  color: white;
+}
+
+.row25vh {
+  height: 25vh;
+  /* background-color: greenyellow; */
+}
+
+.row25vh textarea {
+  height: 95%;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+}
+
+.row50vh {
+  height: 55vh;
+  /* background-color: greenyellow; */
+}
+
+.row50vh textarea {
+  height: 97.7%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  padding: 10px;
+}
+
+/* ======================
+下段
+=========================*/
+
+#table2 {
+  width: 100%;
+  margin: auto;
+  height: 25vh;
+  display: flex;
+  /* background-color: crimson; */
+}
+
+.row10vh {
+  height: 21vh;
+  /* background-color: greenyellow; */
+}
+
+.row10vh textarea {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  border: none;
   padding: 10px;
 }
 
 .tablecontents_w50 {
   width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.innertable {
-  height: 100%;
-  width: 100%;
-}
-
-.rowauto {
-  height: auto;
-}
-
-.row10 {
-  height: 10px;
-}
-
-.row80 {
   height: 80%;
+  box-sizing: border-box;
+  padding: 3px;
 }
 
-.row80 textarea {
+/* h2 {
+  text-align: center;
+} */
+
+/* ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+} */
+
+/* li {
+  margin-bottom: 10px;
+} */
+
+/* tr {
   height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: white;
-  border-radius: 0 0 5px 5px;
-}
+  background-color: ;
+} */
+
+/* th {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  height: 10%;
+  background-color: red;
+  color: white;
+  border-radius: 5px 5px 0 0;
+} */
+
+/* textarea {
+  resize: none;
+  height: 100%;
+  color: red;
+  font-family: "Noto Sans JP", sans-serif;
+} */
+
+/* .ondes {
+  color: rgb(100, 100, 100);
+  font-size: 1.2rem;
+} */
+
+/* .rowauto {
+  height: auto;
+} */
